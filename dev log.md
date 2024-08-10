@@ -16,3 +16,23 @@ Although using this IC will require two separate ICs to drive the motors, I susp
 I'm not entirely sure which MCU to choose. I decided on the ATTINY1616 because I often see people using the ATTINY series MCUs to make remote control cars on YouTube. So I looked up ATTINY models with more than 10 GPIOs and eventually chose the       
                      ATTINY1616. After deciding, I started searching for relevant information to draw the schematic, but there was much less information available than I expected. Luckily, I found someone who had made a development board with the ATTINY1616, complete with                       a schematic!
  ![plan](https://github.com/user-attachments/assets/1aefb075-60f7-43f3-a199-f7a33e822fd3)
+
+ # ver 4
+ ## goal
+ Make the PCB smaller (antenna)
+ ## antenna knowledge
+ Frequency Range: the antenna desired frequency band (2.4 GHz).
+
+Gain: Measure of how much the antenna amplifies the signal, typically in dBi. Higher gain means stronger signal in specific directions.
+
+Impedance: Usually 50Ω to match the RF circuitry and minimize signal reflection.
+
+Bandwidth: The range of frequencies over which the antenna can operate effectively.
+
+Efficiency: Represents how well the antenna converts input power into RF energy. Higher efficiency is better.
+
+Radiation Pattern: The distribution of radiated power in space, which determines how the antenna transmits and receives signals.
+
+Polarization: Orientation of the electromagnetic wave.
+
+ref:https://www.johansontechnology.com/understanding-chip-antennas-handbook
