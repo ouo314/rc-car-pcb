@@ -36,3 +36,20 @@ Radiation Pattern: The distribution of radiated power in space, which determines
 Polarization: Orientation of the electromagnetic wave.
 
 ref:https://www.johansontechnology.com/understanding-chip-antennas-handbook
+
+## pcb layout
+The first layer is for the antenna signal circuit and the signal transmission circuits between the MCU and RF IC. 
+The second layer is the ground plane. 
+The third layer is for power (3.3V, 3.7V, 5V).
+The fourth layer is for signal routing. 
+
+The antenna is placed at the edge.
+The motor driver is positioned away from the RF area. 
+The ground plane should be continuous and uninterrupted to provide a stable reference plane and signal return path. 
+Use vias to connect the power layer to the ground plane to provide decoupling and reduce power noise.
+
+ref:
+https://resources.altium.com/p/digital-engineers-guide-rf-pcb-layout-and-routing
+https://resources.altium.com/p/follow-your-multilayer-ground-return-path-to-prevent-emi#ground-return-path-vs-reference-planes
+https://resources.altium.com/p/changing-pcb-reference-planes-during-routing-multilayer-boards
+https://resources.altium.com/p/what-rf-circuit-design
